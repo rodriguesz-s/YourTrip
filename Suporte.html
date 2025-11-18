@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2 class="titulo-destinos"><span class="destaque3">Suporte</span></h2>    
+    <div class="botoes">
+    <a href="index.html" class="botao">Início</a>
+    <a href="destinos.html" class="botao">Destinos</a>
+    <a href="hospedagens.html" class="botao">Hospedagens</a>
+    <a href="promoções.html" class="botao">Promoções</a>
+    <a href="Suporte.html" class="botao">Suporte</a>
+    </div>
+
+    <div class="caixa-reclamacao">
+  <h2>📩 Fale Conosco</h2>
+  <p>Conte pra gente o que aconteceu, queremos te ajudar!</p>
+
+  <textarea id="mensagem" placeholder="Escreva sua mensagem aqui..."></textarea>
+  <button onclick="enviarWhatsApp()">Enviar pelo WhatsApp</button>
+
+<script>
+  function enviarWhatsApp() {
+    const mensagem = document.getElementById("mensagem").value.trim();
+
+    if (mensagem === "") {
+      alert("Por favor, escreva sua mensagem antes de enviar!");
+      return;
+    }
+
+    const numero = "5521995993000";
+    
+    const url = `https://wa.me/${numero}?text=${encodeURIComponent("Reclamação: " + mensagem)}`;
+
+    window.open(url, "_blank");
+  }
+</script>
+
+</div>
+
+
+
+</body>
+</html>
