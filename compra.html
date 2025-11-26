@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="style.css">
+      <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f3f3f3;
+            padding: 20px;
+        }
+
+        .checkout {
+            background: white;
+            max-width: 450px;
+            margin: auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #bbb;
+            border-radius: 6px;
+            margin-top: 5px;
+        }
+
+        #total, #parcelasInfo {
+            background: #eef;
+            padding: 12px;
+            margin-top: 12px;
+            border-radius: 6px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        button {
+            margin-top: 15px;
+            width: 100%;
+            padding: 12px;
+            border: none;
+            background: #0077ff;
+            color: white;
+            font-size: 16px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #005dd4;
+        }
+
+        #parcelasBox {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <h2 class="titulo-destinos"><span class="destaque3">Check-out</span></h2>    
+    <div class="botoes">
+    <a href="index.html" class="botao">Início</a>
+    <a href="destinos.html" class="botao">Destinos</a>
+    <a href="hospedagens.html" class="botao">Hospedagens</a>
+    <a href="promoções.html" class="botao">Promoções</a>
+    <a href="Suporte.html" class="botao">Suporte</a>
+    </div>
+
+    <div class="check-out">
+        <label>Nome Completo:</label>
+        <input type="text" id="nome">
+
+        <label>Pacotes:</label>
+        <select id="pacotes">
+        <option value="10.776,68">Maldivas - R$10.776,68</option>
+        <option value="12.890,76">França - R$12.890,76</option>
+        <option value="11.987,54">Venezza - R$11.987,54</option>
+        </select>
+
+        <label>Data Da Viagem:</label>
+        <input type="date" id="date">
+
+        <br>
+        <label>Quantidade de Pessoas:</label>
+        <input type="number" id="quantidade" min="1" value="1">
+
+        <br>
+        <label>Forma de pagamento:</label>
+        <select id="pagamento">
+            <option value="pix">PIX</option>
+            <option value="boleto">boleto</option>
+            <option value="cartao"> Cartão de Crédito</option>
+        </select>
+
+        <div id="parcelasBox">
+            <label>Parcelamento:</label>
+            <select id="parcelas">
+            <option value="1">1x sem juros</option>
+            <option value="1">2x sem juros</option>
+            <option value="1">3x sem juros</option>
+            <option value="1">4x</option>
+            <option value="1">5x</option>
+            <option value="1">6x</option>
+            <option value="1">7x</option>
+            <option value="1">8x</option>
+            <option value="1">9x</option>
+            <option value="1">10x</option>
+            <option value="1">11x</option>
+            <option value="1">12</option>
+            <option value="1">13x</option>
+            <option value="1">13x</option>
+            <option value="1">14x</option>
+            <option value="1">15x</option>
+            <option value="1">16x</option>
+            <option value="1">17x</option>
+            <option value="1">18x</option>
+            </select>
+
+            <div id="parcelasInfo">
+
+            </div>
+        </div>
+
+        <div id="total">Total: R$00,00</div>
+
+       <button onclick="finalizarCompra()">Finalizar Compra</button>
+
+    </div>
+
+ <script src="script.js"></script>
+
+</body>
+</html>

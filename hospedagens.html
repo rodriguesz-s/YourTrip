@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2 class="titulo-destinos"><span class="destaque3">Hospedagens</span></h2>    
+    <div class="botoes">
+    <a href="index.html" class="botao">Início</a>
+    <a href="destinos.html" class="botao">Destinos</a>
+    <a href="hospedagens.html" class="botao">Hospedagens</a>
+    <a href="promoções.html" class="botao">Promoções</a>
+    <a href="Suporte.html" class="botao">Suporte</a>
+    </div>
+   <div class="caixa-hospedagens">
+    <h3>Encontre o Hotel mais próximo de você!</h3>
+    <p>Digite o destino da sua viagem e te mostraremos o hotel mais próximo.</p>
+
+    <input type="text" id="destino" placeholder="Ex: Paris, Maldivas, Venezza">
+    <button onclick="buscarHotel()">Buscar hotel</button>
+    <p id="resultado"></p>
+   </div>
+
+   <script>
+  function buscarHotel() {
+    const destino = document.getElementById("destino").value.trim().toLowerCase();
+    const resultado = document.getElementById("resultado");
+
+    if (destino === "") {
+      resultado.innerText = "Por favor, digite um destino!";
+      return;
+    }
+
+    let hotel;
+    if (destino.includes("maldivas")) hotel = "Hotel Coral Paradise 🏝️";
+    else if (destino.includes("frança") || destino.includes("paris")) hotel = "Hotel Étoile Paris ✨";
+    else if (destino.includes("venezza")) hotel = "Hotel Venezza Imperial 🏰";
+    else hotel = "Desculpe, ainda não temos hotéis cadastrados para esse destino... 😞";
+
+    resultado.innerText = `🏨 Hotel indicado: ${hotel}`;
+  }
+</script>
+
+<div class="galeria">
+<img src="imagens/grecia1.jpg">
+<img src="imagens/maldivas3.jpg">
+</div>
+
+
+</body>
+</html>

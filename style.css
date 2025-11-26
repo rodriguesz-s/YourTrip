@@ -1,0 +1,413 @@
+/*inicio*/
+.titulo-principal {
+    font-size: 50px;
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: #6eb5e4;
+    margin-bottom: 30px;
+}
+
+.caixa {
+    background-color: rgb(blue);
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0;
+    margin: 20px auto;
+    width: 500px;
+    font-weight: bold;
+}
+
+body {
+    background-color:azure;
+    margin: 0;
+    padding: 0;
+}
+
+.caixa h2 {
+    color: black;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.caixa p1 {
+    color: black;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.destaque {
+    color: brown;
+}
+
+.destaque2 {
+    color: #6eb5e4;
+    transition: color 0.3s;
+}
+.destaque2:hover {
+    color: #6eb5e4;
+    text-shadow: 1px 1px 5px white;
+    font-size: 1.1em;
+}
+
+
+
+.galeria {
+    display: flex; 
+    gap: 20px;
+    justify-content: center;
+    background-color: azure;
+  
+}
+.fpraia {
+    border-radius: 15px;
+    width: 400px;
+    display: block;
+    margin-right: 20px;
+    background-color: azure;
+    
+}
+.viena1 {
+    border-radius: 15px;
+    width: 400px;
+    display: block;
+    margin-right: 20px;
+    background-color: azure;
+}
+
+.botao {
+    display: inline-flex;
+    background-color: rgb(92, 171, 218);
+    color: white;
+    padding: 12px 10px;
+    border-radius: 15px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: background-color 0.3 ease transform 0.3 ease;
+    margin: 5px;
+}
+.botoes {
+    display: flex;
+    justify-content: center;
+}
+.botao:hover {
+    background-color: rgb(116, 178, 197);
+    transform: scale(1.05);
+}
+
+/*Página de destinos*/
+
+.titulo-destinos {
+  font-size: 50px;
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: whitesmoke;
+    margin-bottom: 30px;
+}
+
+.destaque3 {
+    color: #6eb5e4;
+    transition: color 0.3s;
+}
+.destaque3:hover {
+    color: #6eb5e4;
+    text-shadow: 1px 1px 5px white;
+    font-size: 1.1em;
+}
+
+/* CONTAINER QUE SEGURA TODAS AS DIVS */
+.pacotes-container {
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap; 
+    gap: 25px; 
+    margin-top: 20px;
+}
+
+/* DIV INDIVIDUAL */
+.pacotemd, .pacotefrc, .pacotevn {
+   background-color: #90ccf5;
+   width: 325px;
+   border-radius: 20px;
+   text-align: center;
+   font-family: 'Times New Roman', Times, serif;
+   overflow: hidden;
+   transition: all 0.3s ease;
+   box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+   margin: 20px;
+ }
+
+.pacotemd:hover, .pacotefrc:hover, .pacotevn:hover {
+    color: #000;
+    text-shadow: 1px 1px 5px rgb(94, 91, 91);
+    transform: scale(1.05);
+    background-color: rgb(143, 211, 232);
+}
+
+.pacotemd img, .pacotefrc img, .pacotevn img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 0auto;
+    display: block;
+}
+
+.pacotemd h3, .pacotefrc h3, .pacotevn h3 {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.descricao2, .descricao3, .descricao4 {
+    font-size: 18px;
+    margin: 10px 15px;
+    text-align: left;
+}
+
+.destaque4 {
+    color: brown;
+}
+
+/* BOTÃO */
+.botao1 {
+    display: inline-block;
+    background-color: #0078d4;
+    color: white;
+    text-decoration: none;
+    padding: 15px 25px;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    margin-bottom: 15px;
+    font-family:'Times New Roman', Times, serif;
+
+}
+.email:hover {
+    background-color: #005fa3;
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 120, 212, 0.6);
+}
+
+/*HOSPEDAGEM*/
+
+.caixa-hotel {
+  background-color: #6eb5e4; 
+  color: #fff;
+  padding: 25px;
+  border-radius: 20px;
+  text-align: center;
+  width: 350px;
+  margin: 40px auto;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+
+}
+
+.caixa-hotel:hover {
+  transform: scale(1.03);
+}
+
+.caixa-hotel h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.caixa-hotel p {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+/* Campo de texto */
+.caixa-hotel input {
+  width: 80%;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  margin-top: 5px;
+  outline: none;
+  color: #333;
+}
+
+/* Botão */
+.caixa-hotel button {
+  background-color: #fff;
+  color: #6eb5e4;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.caixa-hotel button:hover {
+  background-color: #e0f2fb;
+  transform: scale(1.05);
+}
+
+/* Resultado */
+#resultado {
+  margin-top: 15px;
+  font-size: 18px;
+  color: #00334d;
+  font-weight: bold;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  display: inline-block;
+  width: 80%;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.galeria {
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  gap: 15px; 
+  padding: 20px;
+  background-color: #f7f7f7; 
+  border-radius: 15px;
+}
+
+.galeria img {
+  width: 280px;
+  height: 190px;
+  object-fit: cover; 
+  border: 2px solid #6eb5e4; 
+  border-radius: 10px; 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+ 
+.galeria img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.caixa-reclamacao {
+  background-color: #6eb5e4;
+  color: #fff;
+  padding: 25px;
+  border-radius: 20px;
+  text-align: center;
+  width: 350px;
+  margin: 40px auto;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.caixa-reclamacao h2 {
+  margin-bottom: 10px;
+}
+
+.caixa-reclamacao p {
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+.caixa-reclamacao textarea {
+  width: 90%;
+  height: 100px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  resize: none;
+  font-size: 15px;
+  color: #333;
+  outline: none;
+}
+
+.caixa-reclamacao button {
+  background-color: #fff;
+  color: #6eb5e4;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.caixa-reclamacao button:hover {
+  background-color: #e0f2fb;
+  transform: scale(1.05);
+}
+
+
+/*hospedagens*/
+
+/* Caixa do buscador */
+.caixa-hospedagens {
+    background: #6eb5e4;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    margin: 40px auto;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.caixa-hospedagens h3 {
+    margin-bottom: 10px;
+    color: #090c0f;
+    font-size: 22px;
+}
+
+.caixa-hospedagens input {
+    width: 80%;
+    padding: 10px;
+    border: 2px solid #0077b6;
+    border-radius: 8px;
+    outline: none;
+    margin-top: 10px;
+}
+
+.caixa-hospedagens button {
+    margin-top: 12px;
+    padding: 10px 20px;
+    background: #298fb7;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.caixa-hospedagens button:hover {
+    background: #0092cc;
+}
+
+#resultado {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Galeria de imagens */
+.galeria {
+    margin: 40px auto;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.galeria .foto {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+}
+
+.galeria .foto:hover {
+    transform: scale(1.05);
+}
+
+
+
